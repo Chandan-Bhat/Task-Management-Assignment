@@ -34,9 +34,13 @@ $ npm run test:cov
 ## Deployment
 
 This application is deployed on [Render](https://render.com/).
+
 You can check it out at [API](https://task-management-assignment-1lis.onrender.com/)
+
 Deployed Swagger Docs are present at [API Docs](https://task-management-assignment-1lis.onrender.com/api)
+
 Provide a .env file with DB connection string i.e: DATABASE_URL and JWT_SECRET for token signing
+
 This project uses serverless Postgres SQL using NeonDB service
 
 
