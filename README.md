@@ -1,60 +1,84 @@
-## Description
+## Task Management API
 
-Task Management API using [NestJs](https://github.com/nestjs/nest) framework with TypeScript using Neon DBs serverless infrastructure for Postgres SQL. Includes JWT auth with protected routes and robust input/output data validation, along with detailed docs with example data.
+A robust Task Management API built with [NestJS](https://github.com/nestjs/nest) framework, featuring TypeScript, JWT authentication, and PostgreSQL database using NeonDB's serverless infrastructure.
 
-## Project setup
+## Features
+
+- 🔐 JWT Authentication
+- 📝 Task Management (CRUD operations)
+- 🛡️ Protected Routes
+- 📊 Input/Output Validation
+- 📚 Swagger Documentation
+- 🧪 Unit & E2E Testing
+- 🚀 Serverless PostgreSQL with NeonDB
+
+## Project Setup
 
 ```bash
+# Install dependencies
 $ npm install
+
+# Create .env file with required variables
+DATABASE_URL=your_neon_db_connection_string
+JWT_SECRET=your_jwt_secret_key
 ```
 
-## Compile and run the project
+## Running the Application
 
 ```bash
-# development
-$ npm run start
-
-# watch mode
+# Development mode
 $ npm run start:dev
+
+# Production mode
+$ npm run build
+$ npm run start:prod
 ```
 
-## Run tests
+## API Documentation
+
+Comprehensive API documentation is available via Swagger UI:
+- Local: `http://localhost:3000/api`
+- Production: `https://task-management-assignment-1lis.onrender.com/api`
+
+The Swagger documentation includes detailed information about:
+- Authentication endpoints
+- Task management endpoints
+- Request/response schemas
+- Example requests
+- Authentication requirements
+
+## Testing
 
 ```bash
-# unit tests
+# Unit tests
 $ npm run test
 
-# e2e tests
+# E2E tests
 $ npm run test:e2e
 
-# test coverage
+# Test coverage
 $ npm run test:cov
 ```
 
 ## Deployment
 
-This application is deployed on [Render](https://render.com/).
+The application is deployed on [Render](https://render.com/):
+- API: [https://task-management-assignment-1lis.onrender.com/](https://task-management-assignment-1lis.onrender.com/)
+- Swagger Docs: [https://task-management-assignment-1lis.onrender.com/api](https://task-management-assignment-1lis.onrender.com/api)
 
-You can check it out at [https://task-management-assignment-1lis.onrender.com/](https://task-management-assignment-1lis.onrender.com/)
+## Postman Collection
 
-Deployed Swagger Docs are present at [https://task-management-assignment-1lis.onrender.com/api](https://task-management-assignment-1lis.onrender.com/api)
+A Postman collection and environment setup is available in the `/openAPI` directory for easy testing.
 
-Provide a .env file with DB connection string i.e: DATABASE_URL and JWT_SECRET for token signing
+## Error Handling
 
-This project uses serverless Postgres SQL using NeonDB service
+The API returns appropriate HTTP status codes and error messages:
+- 400: Bad Request
+- 401: Unauthorized
+- 403: Forbidden
+- 404: Not Found
+- 500: Internal Server Error
 
+## Stay in Touch
 
-```bash
-$ npm install && npm build
-$ npm run start:prod
-```
-
-
-## Resources
-Have provided a Postman collection along with Postman env setup under /OpenApi folder
-can import these files onto your postman account and test it out locally/deployed-instance
-
-
-## Stay in touch
-
-- LinkedIn  - [Chandan Bhat](www.linkedin.com/in/chandan-bhat-704agz)
+- LinkedIn: [Chandan Bhat](https://www.linkedin.com/in/chandan-bhat-704agz)
